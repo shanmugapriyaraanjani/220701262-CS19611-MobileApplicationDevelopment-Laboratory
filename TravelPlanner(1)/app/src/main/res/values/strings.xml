@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TravelPlanner</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_to_travel_planner">Welcome to Travel Planner!</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="app_logo">App Logo</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login">Login</string>
+</resources>

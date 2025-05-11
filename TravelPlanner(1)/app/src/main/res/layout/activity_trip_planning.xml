@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgTrip"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sydney"/>
+
+    <EditText
+        android:id="@+id/edtDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Destination"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSaveTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Trip"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

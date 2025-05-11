@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.travelplanner">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img"
+        android:label=""
+        android:roundIcon="@drawable/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelPlanner"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label=""
+            android:theme="@style/Theme.TravelPlanner.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Login Screen -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+
+        <!-- Home Screen -->
+        <activity android:name=".HomePage"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <!-- Trip Planning -->
+        <activity android:name=".TripPlanningActivity" android:exported="false" />
+
+        <!-- Itinerary -->
+        <activity android:name=".ItineraryActivity" android:exported="false" />
+
+        <!-- Budget Tracker -->
+        <activity android:name=".BudgetTrackerActivity" android:exported="false" />
+
+        <!-- Booking Reminders -->
+        <activity android:name=".BookingRemindersActivity" android:exported="false" />
+
+        <!-- Settings -->
+        <activity android:name=".SettingsActivity" android:exported="false" />
+
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelPlanner.NoActionBar" />
+
+        <activity
+            android:name=".PlanTripActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+
+        <!-- View Plan Activity -->
+        <activity
+            android:name=".ViewPlanActivity"
+            android:parentActivityName=".PlanTripActivity"
+            android:exported="false" />
+
+        <!-- Booking Activity -->
+        <activity
+            android:name=".BookingActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+
+        <!-- List of Flights Activity -->
+        <activity
+            android:name=".ListOfFlightsActivity"
+            android:parentActivityName=".BookingActivity"
+            android:exported="false" />
+
+
+    </application>
+</manifest>
